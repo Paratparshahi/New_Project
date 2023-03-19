@@ -1,0 +1,157 @@
+#root {
+  text-align: center;
+  color: black;
+}
+/* *{
+  margin: 0;
+  padding: 0;
+} */
+.App {
+  font-family: sans-serif;
+  margin: 20px;
+}
+.middle{
+  border: 1px solid;
+  height: 330px;
+  background-size: 100%;
+  color: #ddd;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-image: url("https://demo2.posthemes.com/pos_optima_electronic/electronic3/modules/posslideshows/images/f34959c1d3131a510418dc8bbd9d0e579ecee2ba_banner2_h3.jpg");
+}
+.audios{
+  position: absolute;
+  display:none;
+  z-index: 1;
+  background-color: white;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  width: 800px;
+  height: 250px;
+  transition-duration: 3ms;
+  margin-top: 15px;
+  gap: 20px;
+}
+.audios li{
+  list-style: none;
+}
+.tv_audios{ 
+  position: absolute;
+  display:none;
+  z-index: 1;
+  background-color: white;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  width: 800px;
+  height: 250px;
+  margin-top: 10px;
+  gap: 20px;
+}
+.tv_audios li{
+  list-style: none;
+}
+#audio:hover  .audios{
+  display: grid;
+}
+#TV_Audio:hover .tv_audios{
+  display: grid;
+}
+#TV_Audio{
+  padding-bottom: 10px ;
+}
+#audio{
+  padding-bottom: 15px ;
+}
+.middle2{
+  border: 1px solid;
+  height: 320px;
+  background-size: 100%;
+  color: #ddd;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-image: url("https://demo2.posthemes.com/pos_optima_electronic/electronic3/modules/posslideshows/images/6f7b6ad8bd0c1711496b5c066374b3022ad9e4aa_banner1_h3.jpg");
+}
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  max-width: 300px;
+}
+
+.product-image-container {
+  position: relative;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  color: black;
+  transition: opacity 0.3s ease;
+}
+.products-container:hover .search-bar{
+  opacity: 1;
+}
+.product-image:hover  .search-bar{
+  opacity: 1;
+}
+
+.search-bar {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+  color: aqua;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+
